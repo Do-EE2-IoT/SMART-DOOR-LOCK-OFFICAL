@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <!--Tan dung kha nang cua mot page-->
+    <form action="" method ="post">
+        {% csrf_token %}
+         <input type="text" name = "user_name">
+         <input type="password" name = "password">        
+         <input type="submit"  value = "Login">
+    </form>
+</div>
+</body>
+</html>

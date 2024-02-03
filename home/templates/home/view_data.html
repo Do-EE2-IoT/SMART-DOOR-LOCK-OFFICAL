@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>SMART DOOR LOCK - PROJECT 1</h1>
+    <title>Document</title>
+</head>
+
+
+<body>
+       {% csrf_token %}
+    <table>
+        <ul>
+            {% for item in data %}
+            <li>{{ item.content}}</li>
+                <li>{{ item.vietnam_time}}</li> <!-- Thay 'field_name' bằng tên trường dữ liệu trong model -->
+            {% endfor %}
+        </ul>
+    </tr>
+</body>
+</html>
